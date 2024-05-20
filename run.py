@@ -18,6 +18,8 @@ class Battleship:
         self.player_ship_count = 0
         self.computer_ship_count = 0
 
+        self.round = 0
+
         self.create_ships()
         self.clear()
 
@@ -46,32 +48,56 @@ class Battleship:
         else:
             os.system('clear')
 
+    # Function that displays stats after every round
+    def transmission(self, phit, pcords, chit, ccords):
+        self.clear()
+        pstr = "did" if phit else "did not"
+        cstr = "did" if chit else "did not"
+        
+        print(f"Round {self.round}")
+        print(f"---{self.player_name} attacked: ({pcords[0]}, {pcords[1]})")
+        print(f"---{self.player_name} {pstr} hit a ship!")
+        print(f"---Computer attacked: ({ccords[0]}, {ccords[1]})")
+        print(f"---Computer {cstr} hit a ship!")
+
+        print(f"Player: {self.size - self.computer_ship_count - 1}\t\tComputer: {self.size - self.player_ship_count - 1}")
+
+        input("\nPress enter to continue...")
+
     # Main gameloop
     def play(self):
         while self.computer_ship_count > 0 or self.player_ship_count > 0:
+            player_hit = computer_hit = False
             self.display()
             
             # First take user input
-            prow = int(input("Enter row: "))
-            pcol = int(input("Enter col: "))
+            crow = int(input("Enter row: "))
+            ccol = int(input("Enter col: "))
 
-            # Check if theres a ship present. Handle accordingly
+            # Attack computer
+            if self.computer_grid[crow][ccol] == self.ship:
+                self.computer_ship_count -= 1
+                computer_hit = True
+
+            self.computer_grid[crow][ccol] = self.bomb
+            
+            # Do the same for computer
+            prow = random.randint(0, self.size-1)
+            pcol = random.randint(0, self.size-1)
+
+            # Attack player
             if self.player_grid[prow][pcol] == self.ship:
                 self.player_ship_count -= 1
+                player_hit = True
 
             self.player_grid[prow][pcol] = self.bomb
 
-            # Do the same for computer
-            crow = random.randint(0, self.size-1)
-            ccol = random.randint(0, self.size-1)
-
-            if self.computer_grid[crow][ccol] == self.ship:
-                self.computer_ship_count -= 1
-
-            self.computer_grid[crow][ccol] = self.bomb
-
+            self.round += 1
+            self.transmission(computer_hit, (crow, ccol), player_hit, (prow, pcol))
+           
     # Function to display the grid
     def display(self):
+        self.clear()
         self.display_player()
         print()
         self.display_computer()
