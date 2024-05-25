@@ -85,14 +85,6 @@ To test the game:
 - **`Battleship` Class**: Contains methods for game setup, playing rounds, displaying grids, and determining the game outcome.
 - **`main` Function**: Handles user input for grid size and player name, and initiates the game loop.
 
-### Contribution
-
-Feel free to fork this repository and contribute by submitting pull requests. Any enhancements and bug fixes are welcome.
-
-### Contact
-
-For any queries or support, contact [your email/contact information].
-
 ---
 
 Enjoy playing Bella's Battleship and have fun sinking those ships!
