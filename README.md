@@ -4,6 +4,8 @@
 
 Bella's Battleship is a command-line version of the classic board game "Battleship" written in Python. It provides an engaging single-player experience where the user competes against the computer, aiming to sink all of the opponent's ships before they sink yours.
 
+![Gameplay](https://github.com/annabellaals/Bellas-Battleship/blob/main/images/1.png)
+
 ## How to Play
 
 ### Game Rules
@@ -25,7 +27,6 @@ Bella's Battleship is a command-line version of the classic board game "Battlesh
 
 ### Example Usage
 
-![Images from the app](https://github.com/annabellaals/Bellas-Battleship/blob/main/images/1.png)
 ![](https://github.com/annabellaals/Bellas-Battleship/blob/main/images/2.png)
 
 ## Features
@@ -44,6 +45,14 @@ To test the game:
 2. Ensure all inputs are validated correctly.
 3. Verify that the game correctly identifies hits, misses, and previously bombed locations.
 4. Check the end-game conditions to ensure the correct winner is announced.
+
+## Validator Testing
+
+- Passed the ![PEP 8 online validator](http://pep8online.com/) with flying colors!
+
+## Bugs
+
+- No bugs found
 
 ## Updates
 
@@ -84,6 +93,14 @@ To test the game:
 
 - **`Battleship` Class**: Contains methods for game setup, playing rounds, displaying grids, and determining the game outcome.
 - **`main` Function**: Handles user input for grid size and player name, and initiates the game loop.
+
+### Credits
+
+- Credits to Code Institude, tasks taught me a lot on how to put things together. Help from mentor, and the slack community.
+- Credits to Harvard's Online Courses
+- Credits to W3schools.
+- Credits to Udemy
+- Credits to Code Institute student, helped me on-hand
 
 ---
 
