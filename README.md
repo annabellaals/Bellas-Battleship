@@ -25,15 +25,7 @@ Bella's Battleship is a command-line version of the classic board game "Battlesh
 
 ### Example Usage
 
-```
-------BELLA'S BATTLESHIP------
-
-Enter grid size: 5
-Enter player name: Bella
-Enter row: 2
-Enter col: 3
-...
-```
+![Images from the app]()
 
 ## Features
 
