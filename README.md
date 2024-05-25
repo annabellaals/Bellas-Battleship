@@ -25,7 +25,8 @@ Bella's Battleship is a command-line version of the classic board game "Battlesh
 
 ### Example Usage
 
-![Images from the app]()
+![Images from the app](https://github.com/annabellaals/Bellas-Battleship/blob/main/images/1.png)
+![](https://github.com/annabellaals/Bellas-Battleship/blob/main/images/2.png)
 
 ## Features
 
