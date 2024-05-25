@@ -48,7 +48,7 @@ To test the game:
 
 ## Validator Testing
 
-- Passed the ![PEP 8 online validator](http://pep8online.com/) with flying colors!
+- Passed the [PEP 8 online validator](http://pep8online.com/) with flying colors!
 
 ## Bugs
 
