@@ -152,7 +152,7 @@ if __name__ == "__main__":
                 else:
                     print("Invalid choice. Please enter between 3 or 10.")
             except ValueError:
-                print("Invalid input. Please enter 0 or 1.")
+                print("Invalid input. Please enter a number.")
 
         name = input("Enter player name: ")
 
