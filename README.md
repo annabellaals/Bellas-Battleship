@@ -38,6 +38,44 @@ Bella's Battleship is a command-line version of the classic board game "Battlesh
 - **Round Feedback**: Provides feedback after each round on hits and misses.
 - **Game Result**: Announces the winner at the end of the game.
 
+## Technologies Used
+
+The game implements several key technologies and concepts to create a fun and interactive environment
+
+### 1. Python
+- The game is written entirely in Python 3.12.1
+
+### 2. Object Oriented Programming (OOP)
+- The game uses OOP principles such as encapsulation and implements classes and objects. This promotes modularity and allows code reusage
+
+### 3. Standard Libraries
+- **random**: Used to generate random ship placement and computer's attacks
+- **os**: Used to clear the console, providing a cleaner interface during gameplay
+
+### 4. Game Logic and AI
+- **Core Mechanics**: The game includes essential mechanics such as placement, attacking, processing the attacks and determining the end of game
+- **Basic AI**: The computer's moves are generated randomly, implementing a simple yet effective artifical intelligence for the computer
+
+### 5. User Interaction
+- Players interact via the console by entering their name, grid size and attack coordinates
+- The game provides feedback after every successful round by displaying the state, attack results and final scores
+
+## Components and Their Descriptions
+
+| Component       | Description                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| `Battleship` Class | The main class that encapsulates the game logic, player and computer grids, and game state. |
+| `__init__` Method | Initializes the game, sets up grids, and places ships randomly.            |
+| `create_ships` Method | Randomly places ships on the player and computer grids.                   |
+| `clear` Method | Clears the console screen for better user experience.                         |
+| `transmission` Method | Displays the results of each round, including hits and misses.            |
+| `end_credits` Method | Displays the final results of the game, announcing the winner.             |
+| `play` Method | The main game loop that handles player and computer turns.                     |
+| `display` Method | Displays the current state of the player and computer grids.                  |
+| `display_player` Method | Displays the player's grid.                                              |
+| `display_computer` Method | Displays the computer's grid, hiding ship locations.                    |
+| `main` Script | Handles user inputs for grid size and player name, and starts the game.        |
+
 ## Testing
 
 To test the game:
