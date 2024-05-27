@@ -132,6 +132,11 @@ To test the game:
 - **`Battleship` Class**: Contains methods for game setup, playing rounds, displaying grids, and determining the game outcome.
 - **`main` Function**: Handles user input for grid size and player name, and initiates the game loop.
 
+### Links
+
+- **Live Link**: [](https://bellas-battleship-94168bc0e6f0.herokuapp.com/)
+- **GitHub Link**: [](https://github.com/annabellaals/Bellas-Battleship)
+
 ### Credits
 
 - Credits to Code Institude, tasks taught me a lot on how to put things together. Help from mentor, and the slack community.
