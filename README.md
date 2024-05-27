@@ -134,8 +134,8 @@ To test the game:
 
 ### Links
 
-- **Live Link**: [](https://bellas-battleship-94168bc0e6f0.herokuapp.com/)
-- **GitHub Link**: [](https://github.com/annabellaals/Bellas-Battleship)
+- **Live Link**: [https://bellas-battleship-94168bc0e6f0.herokuapp.com](https://bellas-battleship-94168bc0e6f0.herokuapp.com/)
+- **GitHub Link**: [https://github.com/annabellaals/Bellas-Battleship](https://github.com/annabellaals/Bellas-Battleship)
 
 ### Credits
 
